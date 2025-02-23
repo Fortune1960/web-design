@@ -4,20 +4,45 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fortune Portfolio</title>
-        <link rel="stylesheet" href="portfolio.css">
+        <title>Web Design</title>
+        <link rel="stylesheet" href="web-design.css">
         <script src="https://kit.fontawesome.com/d6000b4415.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">contact</a></li>
-                    <div class="show">
-                
-                    </div>
+    <nav>
+        <ul id="menu-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>About Us</li>
+        </ul>
+        <button class="nav-btn"> Get Started</button>
+    </nav>
+
+    <div class="header">
+        <div class="header-content">
+            <h1><span>PHOTO</span> <Br> <span>EDITOR</span></h1>
+                <div class="btn-container">
+                    <button class="btn-dark">Request call back <i class="fa fa-volume-control-phone" aria-hidden="true"></i></button>
+                    <button class="btn-light">Know More <i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+                </div>
+                <p>Passionate Photo Editor with 10+ years of experience.</p>
+        </div>
+
+            <img src="me-removebg-preview.png" alt="" class="user-img">
+    </div>
+
+    <script>
+        let navbar = document.querySelector('nav');
+
+        window.onscroll = function(){
+           if(window.scrollY > 0){
+            navbar.style.background = '#eefff9';
+           }else{
+            navbar.style.background = 'transparent';
+           }
+        }
+    </script>
+</body>
+</html>
+        
